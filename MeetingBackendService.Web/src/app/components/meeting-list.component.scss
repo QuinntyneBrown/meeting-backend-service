@@ -1,0 +1,30 @@
+h1 {
+    font-size:1.5em;
+}
+
+a {
+    line-height:1.5em;
+    display:inline-block;    
+}
+
+.meeting-list-item-count {
+    min-width:25px;
+}
+
+.meeting-list-item-name {
+    min-width:200px;
+}
+
+.meeting-list-item-action {
+    font-size:0.75em;
+    cursor:pointer;
+    font-weight:100;
+}
+
+.meeting-list-item-name-column {
+    min-width:300px;
+}
+
+.meeting-list-header {
+    font-weight:600;
+}

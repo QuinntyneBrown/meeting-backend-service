@@ -1,0 +1,8 @@
+<div class="meeting-list-page">
+    <one-column-layout>
+		<a [routerLink]="['/meeting']" href="">CREATE MEETING</a>
+        <meeting-list [entities]="_store.meetings$() | async"
+                   (onDelete)="_meetingActions.remove({ id: $event.value.id })"
+                   (onEdit)="_router.navigate(['meeting', $event.value.id])"></meeting-list>
+    </one-column-layout>    
+</div>
