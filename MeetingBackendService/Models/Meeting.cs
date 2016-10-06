@@ -9,7 +9,7 @@ namespace MeetingBackendService.Models
         public App App { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
-        public string Angenda { get; set; }
+        public string Agenda { get; set; }
         public string Minutes { get; set; }
         public string Name { get; set; }
         public bool IsDeleted { get; set; }

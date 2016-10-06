@@ -6,7 +6,7 @@ using System.Web.Http.Description;
 
 namespace MeetingBackendService.Controllers
 {
-    [Authorize]
+    [AllowAnonymous]
     [RoutePrefix("api/meeting")]
     public class MeetingController : ApiController
     {
