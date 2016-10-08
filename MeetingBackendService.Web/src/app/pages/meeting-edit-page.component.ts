@@ -26,11 +26,13 @@ export class MeetingEditPageComponent {
     public onSubmit($event: any) {
         this._meetingActions.add({
             id: $event.value.id,
-            name: $event.value.name
+            name: $event.value.name,
+            agenda: $event.value.agenda,
+            minutes: $event.value.minutes,
+            start: $event.value.start,
+            end: $event.value.end
         });
-
-        setTimeout(() => { this._router.navigate(["/meetings"]); }, 0);
-        
+        setTimeout(() => { this._router.navigate(["/meetings"]); }, 0);        
     }
 
     public onCancel() {

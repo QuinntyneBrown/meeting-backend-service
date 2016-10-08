@@ -1,6 +1,12 @@
 import { NgModule } from '@angular/core';
 
-const providers = [];
+import { AppActions } from "./app.actions";
+import { MeetingActions } from "./meeting.actions";
+
+const providers = [
+    AppActions,
+    MeetingActions
+];
 
 @NgModule({
 	providers: providers

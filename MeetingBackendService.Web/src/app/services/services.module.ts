@@ -2,7 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
 import { HttpModule } from "@angular/http";
 
-const providers = [];
+import { AppService } from "./app.service";
+import { MeetingService } from "./meeting.service";
+
+const providers = [
+    AppService,
+    MeetingService
+];
 
 @NgModule({
     imports: [CommonModule, HttpModule],

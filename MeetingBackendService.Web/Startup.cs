@@ -1,7 +1,9 @@
 using Owin;
-using System.Web.Http;
 using Microsoft.Owin;
 using Unity.WebApi;
+using static MeetingBackendService.ApiConfiguration;
+using static System.Web.Http.GlobalConfiguration;
+using static MeetingBackendService.UnityConfiguration;
 
 [assembly: OwinStartup(typeof(MeetingBackendService.Web.Startup))]
 
@@ -11,10 +13,10 @@ namespace MeetingBackendService.Web
     {
         public void Configuration(IAppBuilder app)
         {            
-            GlobalConfiguration.Configure(config =>
+            Configure(config =>
             {
-                config.DependencyResolver = new UnityDependencyResolver(UnityConfiguration.GetContainer());
-                MeetingBackendService.ApiConfiguration.Install(config, app);
+                config.DependencyResolver = new UnityDependencyResolver(GetContainer());
+                Install(config, app);
             });
         }
     }

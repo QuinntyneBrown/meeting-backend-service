@@ -6,8 +6,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion></ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{658DA84D-AD6C-414A-9333-B89232911187}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -22,8 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
@@ -203,6 +201,10 @@
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\meeting-backend-service - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\meeting-backend-service - Web Deploy.pubxml" />
+    <Content Include="src\styles\index.scss" />
+    <Content Include="src\styles\_breakpoints.scss" />
+    <Content Include="src\styles\_normalize.scss" />
+    <Content Include="src\styles\_varibles.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -212,32 +214,82 @@
     <Content Include="package.json" />
     <Content Include="lib\jquery.min.js" />
     <Content Include="lib\slick.min.js" />
+    <Content Include="src\app\app.component.html">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\app.component.scss">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\app-edit-form.component.html">
+      <DependentUpon>app-edit-form.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\app-edit-form.component.scss">
+      <DependentUpon>app-edit-form.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\app-list.component.html">
+      <DependentUpon>app-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\app-list.component.scss">
+      <DependentUpon>app-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\meeting-edit-form.component.html">
+      <DependentUpon>meeting-edit-form.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\meeting-edit-form.component.scss">
+      <DependentUpon>meeting-edit-form.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\meeting-list.component.html">
+      <DependentUpon>meeting-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\meeting-list.component.scss">
+      <DependentUpon>meeting-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\page-header.component.html">
+      <DependentUpon>page-header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\page-header.component.scss">
+      <DependentUpon>page-header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\side-nav.component.html">
+      <DependentUpon>side-nav.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\side-nav.component.scss">
+      <DependentUpon>side-nav.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\app-edit-page.component.html">
+      <DependentUpon>app-edit-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\app-edit-page.component.scss">
+      <DependentUpon>app-edit-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\app-list-page.component.html">
+      <DependentUpon>app-list-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\app-list-page.component.scss">
+      <DependentUpon>app-list-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\home-page.component.html">
+      <DependentUpon>home-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\home-page.component.scss">
+      <DependentUpon>home-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\meeting-edit-page.component.html">
+      <DependentUpon>meeting-edit-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\meeting-edit-page.component.scss">
+      <DependentUpon>meeting-edit-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\meeting-list-page.component.html">
+      <DependentUpon>meeting-list-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\meeting-list-page.component.scss">
+      <DependentUpon>meeting-list-page.component.ts</DependentUpon>
+    </Content>
     <Content Include="webpack.config.js" />
     <Content Include="tsconfig.json" />
     <Content Include="typedoc.json" />
     <Content Include="typings.json" />
-    <Content Include="src\app\app.component.scss" />
-    <Content Include="src\app\app.component.html" />
-    <Content Include="src\app\pages\home-page.component.scss" />
-    <Content Include="src\app\pages\home-page.component.html" />
-    <Content Include="src\app\components\side-nav.component.scss" />
-    <Content Include="src\app\components\side-nav.component.html" />
-    <Content Include="src\app\components\meeting-edit-form.component.scss" />
-    <Content Include="src\app\components\meeting-edit-form.component.html" />
-    <Content Include="src\app\components\meeting-list.component.scss" />
-    <Content Include="src\app\components\meeting-list.component.html" />
-    <Content Include="src\app\components\app-list.component.scss" />
-    <Content Include="src\app\components\app-list.component.html" />
-    <Content Include="src\app\components\app-edit-form.component.scss" />
-    <Content Include="src\app\components\app-edit-form.component.html" />
-    <Content Include="src\app\pages\meeting-edit-page.component.scss" />
-    <Content Include="src\app\pages\meeting-edit-page.component.html" />
-    <Content Include="src\app\pages\meeting-list-page.component.scss" />
-    <Content Include="src\app\pages\meeting-list-page.component.html" />
-    <Content Include="src\app\pages\app-list-page.component.scss" />
-    <Content Include="src\app\pages\app-list-page.component.html" />
-    <Content Include="src\app\pages\app-edit-page.component.scss" />
-    <Content Include="src\app\pages\app-edit-page.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
@@ -271,8 +323,7 @@
           <IISUrl>http://localhost:56622/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl></CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
@@ -358,6 +409,8 @@
     <TypeScriptCompile Include="src\app\pages\meeting-list-page.component.ts" />
     <TypeScriptCompile Include="src\app\pages\app-list-page.component.ts" />
     <TypeScriptCompile Include="src\app\pages\app-edit-page.component.ts" />
+    <TypeScriptCompile Include="src\app\components\page-header.component.ts" />
+    <TypeScriptCompile Include="src\app\store\meeting.reducer.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
 </Project>
